@@ -29,27 +29,27 @@ class WriterTest extends TestCase
 
     public function testWriterRemainder35(){
         $this->prepare(0,0,0,15);
-        $this->expectOutputString("Linianos");
+        $this->expectOutputString("Linianos\n");
         $this->_writer->writeAnswer($this->_result);
 
     }
 
     public function testWriterRemainder5(){
         $this->prepare(1,0,1,50);
-        $this->expectOutputString("IT");
+        $this->expectOutputString("IT\n");
         $this->_writer->writeAnswer($this->_result);
 
     }
 
     public function testWriterRemainder3(){
         $this->prepare(1,1,0,9);
-        $this->expectOutputString("Linio");
+        $this->expectOutputString("Linio\n");
         $this->_writer->writeAnswer($this->_result);
     }
 
-  public function testNone(){
-      $this->prepare(1,1,1,17);
-      $this->expectOutputString('17');
-      $this->_writer->writeAnswer($this->_result);
+    public function testNone(){
+        $this->prepare(1,1,1,17);
+        $this->expectOutputString("17\n");
+        $this->_writer->writeAnswer($this->_result);
     }
 }

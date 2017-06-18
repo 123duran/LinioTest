@@ -11,23 +11,20 @@ namespace duran\PHP;
 
 class Writer
 {
-    function writeAnswer($result )
+    function writeAnswer($result) : void
     {
         switch ($result) {
             case ($result->remainder35 == 0 ):
-                echo "Linianos";
-
+                echo sprintf("%s\n","Linianos");
                 break;
             case ($result->remainder5 == 0):
-                echo "IT";
+                echo sprintf("%s\n","IT");
                 break;
             case ($result->remainder3==0):
-                echo "Linio" ;
+                echo sprintf("%s\n","Linio");
                 break;
             default:
-                echo "$result->number";
+                echo sprintf("%s\n",$result->number);
         }
-
-        return;
     }
 }
