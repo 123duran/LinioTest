@@ -15,7 +15,7 @@ class Main
 
       for($i =1; $i <=100;$i++)
       {
-          $calcForm = new CalcFormAdd();
+          $calcForm = new CalcForm();
           $result = new Result();
           $result -> number = $i;
           $result -> remainder3  = $calcForm->calcRemainder($i,3);

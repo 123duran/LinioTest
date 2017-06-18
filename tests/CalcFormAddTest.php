@@ -41,7 +41,5 @@ class CalcFormAddTest extends  TestCase
         $this->assertNotEquals(0,$this->_calcForm->calcRemainder(4,3));
         $this->assertNotEquals(0,$this->_calcForm->calcRemainder(7,5));
         $this->assertNotEquals(0,$this->_calcForm->addRemainder(1,0));
-
-
     }
 }
