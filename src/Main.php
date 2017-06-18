@@ -23,6 +23,7 @@ class Main
           $result -> remainder35 = $calcForm->addRemainder($result->remainder3,$result->remainder5);
           $write = new Writer();
           $write->writeAnswer($result);
+          echo"\n";
 
       }
   }

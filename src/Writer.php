@@ -15,18 +15,19 @@ class Writer
     {
         switch ($result) {
             case ($result->remainder35 == 0 ):
-                echo "Linianos \n";
+                echo "Linianos";
 
                 break;
             case ($result->remainder5 == 0):
-                echo "IT \n";
+                echo "IT";
                 break;
             case ($result->remainder3==0):
-                echo "Linio \n" ;
+                echo "Linio" ;
                 break;
             default:
-                echo "$result->number \n";
+                echo "$result->number";
         }
+
         return;
     }
 }
